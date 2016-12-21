@@ -12,7 +12,7 @@ int main(int argc, char *argv[]){
   //opening the file with URLs and read every URL
   FILE *urls=fopen("URLs.txt","r+");
   char *buffer=NULL;
-  size_t size=0;
+  size_t size=1;
   while(1){
     int err =getdelim(&buffer,&size,',',urls);
     if(err==-1) break;
